@@ -32,6 +32,11 @@ const Navbar = () => {
                   Sumando
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className={window.location.pathname === "/compartir-estado" ? "nav-link active" : "nav-link"} to="/compartir-estado">
+                  Compartir Estado
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
