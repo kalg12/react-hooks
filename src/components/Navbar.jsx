@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
-            Ejercicios React Hooks
+            Reack Hooks
           </NavLink>
           <button
             className="navbar-toggler"
@@ -23,12 +23,12 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/hooks">
+                <NavLink className={window.location.pathname === "/hooks" ? "nav-link active" : "nav-link"} aria-current="page" to="/hooks">
                   Hooks
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/sumando">
+                <NavLink className={window.location.pathname === "/sumando" ? "nav-link active" : "nav-link"} to="/sumando">
                   Sumando
                 </NavLink>
               </li>
