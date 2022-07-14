@@ -37,6 +37,11 @@ const Navbar = () => {
                   Compartir Estado
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className={window.location.pathname === "/uso-de-useeffect" ? "nav-link active" : "nav-link"} to="/uso-de-useeffect">
+                  Use Effect
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
