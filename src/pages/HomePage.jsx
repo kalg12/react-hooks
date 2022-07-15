@@ -1,8 +1,10 @@
 import React from 'react'
+import Carousel from '../components/Carousel'
 
 const HomePage = () => {
   return (
     <>
+    <Carousel />
 <div>
   <h1 className="visually-hidden">Heroes examples</h1>
   <div className="px-4 py-5 my-5 text-center">

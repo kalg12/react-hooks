@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 
 function Hooks(props) {
-  const [seleccion, setSeleccion] = useState("");
+  const [seleccion, setSeleccion] = useState(100);
   const [botonActivo, setBotonActivo] = useState("No se ha hecho clic");
+  const [objeto, setObjeto] = useState({nombre: "Ucampers"});
+  const [arreglo, setArreglo] = useState(['manzana','pera']);
+  const [booleano, setBooleano] = useState(true)
 
   /* Una manera de trabajar con useState es haciendo lo de la siguiente manera, pero no se puede trabajar directo en el rénder de nuestro código */
 
@@ -72,11 +76,21 @@ function Hooks(props) {
           {" "}
           Botón
         </button>
+        <button
+          className="btn btn-warning"
+          onClick={() => {
+            setBooleano(false);
+          }}
+        >
+          {" "}
+          Botón
+        </button>
 
         {seleccion && <h4>Seleccionaste: {seleccion}</h4>}
 
         {botonActivo && <h4>Seleccionaste: {botonActivo}</h4>}
       </div>
+      <h2>Mi variable {seleccion}</h2>
     </>
   );
 }
